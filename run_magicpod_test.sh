@@ -3,9 +3,8 @@
 
 # magicpod-apiクライアントの最新版を現在のディレクトリにダウンロード・解凍
 # セキュリティのため、MAGICPOD_API_TOKENはGitHubの環境変数で設定
-
-OS=mac
-FILENAME=magicpod-api-client
+OS=mac 　# Windowsマシン上でのビルドの場合はwindows、Linuxはlinuxを指定
+FILENAME=magicpod-api-client 　# 任意のファイル名
 curl -L "https://app.magicpod.com/api/v1.0/magicpod-clients/api/${OS}/latest/" -H "Authorization: Token ${MAGICPOD_API_TOKEN}" --output ${FILENAME}.zip
 unzip -q ${FILENAME}.zip
 
