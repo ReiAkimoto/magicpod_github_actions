@@ -15,4 +15,4 @@ export MAGICPOD_PROJECT=DemoBrowser
 
 # 設定番号の設定を使ってテスト一括実行
 TEST_SETTING_NUMBER=8
-./magicpod-api-client batch-run -S ${TEST_SETTING_NUMBER} -t ${MAGICPOD_API_TOKEN}
+./magicpod-api-client batch-run -S ${TEST_SETTING_NUMBER}
